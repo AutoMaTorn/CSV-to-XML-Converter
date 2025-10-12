@@ -8,7 +8,7 @@ typedef struct {
     int num_cols;
 } CSVTable;
 
-CSVTable *read_csv(const char *filename);
-void free_csv(CSVTable *table);
+CSVTable *read_csv(const char *filename); // Чтение CSV файла
+void free_csv(CSVTable *table);          // Освобождение памяти, занятой CSVTable
 
 #endif
