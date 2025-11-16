@@ -11,6 +11,10 @@ OBJS = $(OBJDIR)/main.o \
 
 TARGET = csv_to_xml
 
+.PHONY: all clean testdata
+
+all: $(TARGET)
+
 $(TARGET): $(OBJS)
 	$(CC) $(OBJS) -o $@
 
@@ -22,3 +26,7 @@ $(OBJDIR):
 
 clean:
 	rm -rf $(OBJDIR) $(TARGET)
+
+# Generate test data using Python script
+testdata:
+	python3 tools/gen_csv.py

@@ -1,0 +1,7 @@
+build/
+csv_to_xml
+out.xml
+*.o
+.DS_Store
+tests/*.csv
+PLAN_DEVELOP.md
