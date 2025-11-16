@@ -59,13 +59,6 @@ make testdata
 - `tests/with_specials.csv`
 - `tests/large_10000.csv` (10 000 строк)
 
-Проверка на утечки памяти (опционально)
----------------------------------------
-Если установлен valgrind:
-```bash
-valgrind --leak-check=full --show-leak-kinds=all ./csv_to_xml
-```
-
 Формат входного CSV
 -------------------
 - Разделитель: запятая (,)
