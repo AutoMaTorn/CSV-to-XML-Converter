@@ -92,6 +92,6 @@ valgrind --leak-check=full --show-leak-kinds=all ./csv_to_xml
 
 Лицензия
 --------
-MIT (при необходимости измените).
+MIT 
 
 
